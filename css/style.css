@@ -215,6 +215,7 @@ header{
 
 .pickOfTheWeekText{
     background-color: #a76e63;
+    padding: 80px;
 }
 
 .pickOfTheWeekText > button{
@@ -243,4 +244,14 @@ header{
 
 .pickOfTheWeekContainer{
     margin-top: 100px;
+}
+
+.pickOfTheWeekText > h2{
+    font-size: 45px;
+    font-family: 'Noto Serif Toto', serif;
+    font-weight: bold;
+}
+
+.pickOfTheWeekContainer > div{
+    flex-basis: 720px;
 }
