@@ -255,3 +255,115 @@ header{
 .pickOfTheWeekContainer > div{
     flex-basis: 720px;
 }
+
+
+.breakfastImage{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.dessertImage{
+    width: 250px;
+    height: 250px; 
+    overflow: hidden;
+}
+
+.drinksImage{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.mainCourseImage{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.snacksImage{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.breakfastImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.dessertImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.drinksImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.mainCourseImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.snacksImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.breakfastImage img:hover{
+    transform: scale(1.1);
+}
+
+.dessertImage img:hover{
+    transform: scale(1.1);
+}
+
+.drinksImage img:hover{
+    transform: scale(1.1);
+}
+
+.mainCourseImage img:hover{
+    transform: scale(1.1);
+}
+
+.snacksImage img:hover{
+    transform: scale(1.1);
+}
+
+.popularCategoriesContainer{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.popularCategoriesContainer > h2{
+    font-size: 40px;
+    font-family: 'Noto Serif Toto', serif;
+    font-weight: bold;
+}
+
+.popularCategoriesButton > button{
+    border: 1px solid;
+    position: relative;
+    transition: 0.5s;
+}
+
+.popularCategoriesButton > button::after{
+    content: ">";
+    position: absolute;
+    top: 8px;
+    right: 31px;
+    display: inline-block;
+     
+}
+ 
+.popularCategoriesButton > button:hover{
+    background-color: black !important;
+    color: white;
+}
