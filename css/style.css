@@ -478,3 +478,116 @@ header{
     
 }
 
+.ideaBehindGoodzyButton > button{
+    border: 1px solid;
+    position: relative;
+    transition: 0.5s;
+    color: #a76e63;
+}
+
+.ideaBehindGoodzyButton > button::after{
+    content: ">";
+    position: absolute;
+    top: 8px;
+    right: 31px;
+    display: inline-block;
+     
+}
+.ideaBehindGoodzyButton > button:hover{
+    background-color: #a76e63 !important;
+    color: white;
+}
+
+.ideaBehindGoodzyImage, .ideaBehindGoodzyText{
+    width: 720px;
+    height: 550px;
+}
+
+.ideaBehindGoodzyImage > img{
+    width: 100%;
+    height: 100%;
+}
+
+.ideaBehindGoodzyText{
+    background-color: #f2ebe5;
+}
+
+.ideaBehindGoodzyContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ourPartnersContainer{
+    margin-bottom: 100px;
+}
+
+.ourPartners > div{
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function:ease;
+}
+
+.companyLogo > a > img{
+    width: 15px;
+}
+
+.companyLogo > a{
+    display: inline-block;
+    margin: 10px;
+}
+
+.footerLinks > ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.footerLinks > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.footerLinks{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footerAdimn > ul > li,a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footerAdimn > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+
+}
+
+.footerAdimn{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footerText small{
+    font-size: 12px;
+}
