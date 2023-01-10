@@ -561,11 +561,11 @@ header{
     margin-bottom: 20px;
 }
 
-.footerAdimn > ul > li,a{
+/* .footerAdimn > ul > li,a{
     color: white;
     font-size: 13px;
     text-decoration: none;
-}
+} */
 
 .footerAdimn > ul{
     list-style: none;
@@ -591,3 +591,17 @@ header{
 .footerText small{
     font-size: 12px;
 }
+
+.footerContaier > .footerAdimn > ul > li > a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footerContaier > .footerAdimn > ul > li{
+    font-size: 13px;
+}
+
+.footerContaier > .footerText > small > a{
+    color: white;
+} 
