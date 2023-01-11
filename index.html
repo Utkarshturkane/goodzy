@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GOODZY</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Toto:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,11 +13,16 @@
      <header class="position-fixed  bg-white top-0 start-0 end-0 ">
         <div class="d-flex headerContainer justify-content-between align-items-center mt-3 container mb-4">
             <div class="navMenu">
+                <!-- Hamburger Menu -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
                 <nav>
                     <ul class="d-flex justify-content-center align-items-center">
-                        <li class="m-3"><button class="bg-body rounded-pill">Recipes</button></li>
-                        <li class="m-3"><button class="bg-body rounded-pill">About</button> </li>
-                        <li class="m-3"><button class="bg-body rounded-pill">For Partners</button></li>
+                        <li class="m-md-3"><a class="bg-md-body rounded-md-pill d-inline-block text-decoration-none text-dark">Recipes</a></li>
+                        <li class="m-md-3"><a class="bg-md-body rounded-md-pill d-inline-block text-decoration-none text-dark">About</a> </li>
+                        <li class="m-md-3"><a class="bg-md-body rounded-md-pill d-inline-block text-decoration-none text-dark">For Partners</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,22 +54,22 @@
                 <h6 class="fw-normal mt-3">Get your family excited about meals again with easy <br> and healthy recipes from FOODZY cooking blog.</h6>
                 <button class="bg-transparent fw-bold border-1 py-2 px-5 mt-5">View All Recipes</button>
             </div>
-        </div>
+        </div> 
      </section>
      
      <section>
-        <div class="infoContainer d-flex container justify-content-between">
-            <div class="infoBox">
+        <div class="infoContainer d-flex container justify-content-md-between row mx-md-auto">
+            <div class="infoBox col-12 col-md-4">
                 <img src="images/recipe-book.png" width="80" height="80" alt="">
                 <h5 class="mt-3">500+ recipes</h5>
                 <p>We've developed over 500 recipes. Follow for some more!</p>
             </div>
-            <div class="infoBox">
+            <div class="infoBox col-12 col-md-4">
                 <img src="images/ingredient.png" width="80" height="80" alt="">
                 <h5 class="mt-3">10 Ingredients</h5>
                 <p>All our recipes require not more than 10 simple ingredients</p>
             </div>
-            <div class="infoBox">
+            <div class="infoBox col-12 col-md-4">
                 <img src="images/recipe-addition.png" width="70" height="70"  alt="">
                 <h5 class="mt-3">Weekly updates</h5>
                 <p>We post new recipes every week, stay tuned for updates!</p>
@@ -77,27 +82,27 @@
             <div class="mb-5">
                 <h2 class="text-center featuredRecipesHeading">Featured Recipes</h2>
             </div>
-            <div class="featuredRecipes d-flex justify-content-between">
-                <div class="featuredDishes">
+            <div class="featuredRecipes d-flex justify-content-between row">
+                <div class="featuredDishes col-12 col-md-4">
                     <div class="imageContainer">
                         <img src="images/delicious-healthy-chia-pudding-with-banana-kiwi-chia-seeds (2) (1).jpg" alt="">
                     </div>
                     <h6 class="mt-4 featuredHeading">FEATURED</h6>
-                    <h6 class="fw-bold">Baked zucchini with tomatoes and onions</h6>
+                    <h6 class="fw-bold text-center text-md-start">Baked zucchini with tomatoes and onions</h6>
                 </div>
-                <div class="featuredDishes">
+                <div class="featuredDishes col-12 col-md-4 mt-5 m-md-0">
                     <div class="imageContainer newDish">
                         <img src="images/diet-menu-healthy-fresh-vegetable-fruit-salad-vegan-lunch-bowl-buddha-bowl-salad-with-ingredients-healthy-balanced-vegetarian-food-concept (2) (1).jpg" width="400" alt="">
                     </div>
                     <h6 class="mt-4 featuredHeading">FEATURED</h6>
-                    <h6 class="fw-bold">Smoothie bowl with granola and berries</h6>
+                    <h6 class="fw-bold text-center text-md-start">Smoothie bowl with granola and berries</h6>
                 </div>
-                <div class="featuredDishes">
+                <div class="featuredDishes col-12 col-md-4 mt-5 m-md-0">
                     <div class="imageContainer">
                         <img src="images/front-view-fresh-salad-with-arugula-avocado-tomato (2) (1).jpg" width="400" alt="">
                     </div>
                     <h6 class="mt-4 featuredHeading">FEATURED</h6>
-                    <h6 class="fw-bold">Vegan pumpkin soup with tofu</h6>
+                    <h6 class="fw-bold text-center text-md-start">Vegan pumpkin soup with tofu</h6>
                 </div>
             </div>
             <div class="featureRecipesButton d-flex justify-content-center">
@@ -107,11 +112,11 @@
      </section>
 
      <section>
-        <div class="pickOfTheWeekContainer text-white d-flex justify-content-center ">
-            <div class="pickOfTheWeekText d-flex flex-column justify-content-around  text-center align-items-center">
+        <div class="pickOfTheWeekContainer text-white d-flex justify-content-md-center flex-column-reverse flex-md-row">
+            <div class="pickOfTheWeekText d-flex flex-column  justify-content-around  text-center align-items-center">
                 <h6 class="">PICK OF THE WEEK</h6>
                 <h2>Peanut Butter & <br> Berries Parfe</h2>
-                <p class="text-center fs-6">This nourishing recipe is perfect for all <br> people of all ages! It is quick and easy to make, but packed with <br>flavour and is sure to impress your guests.</p>
+                <p class="text-center fs-6">This nourishing recipe is perfect for all <br class="break"> people of all ages! It is quick and easy to make, but packed with <br class="break">flavour and is sure to impress your guests.</p>
                 <button class="bg-transparent fw-bold border-1 py-2 px-5 mt-3 border-white align-self-center">View recipe</button>
             </div>
             <div class="pickOfTheWeekImage">
@@ -123,7 +128,7 @@
      <section>
         <div class="popularCategoriesContainer px-5">
             <h2 class="text-center mb-5">Popular Categories</h2>
-            <div class="popularCategories d-flex justify-content-between">
+            <div class="popularCategories d-flex justify-content-between ">
                 <div class="breakfastContainer d-flex justify-content-center flex-column align-items-center">
                     <div class="breakfastImage">
                         <img src="images/vada-pav-wada-pao-is-indian-desi-burger-is-roadside-fast-food-dish-from-maharashtra-selective-focus.jpg" alt="">
@@ -169,47 +174,47 @@
 
      <section>
         <div class="authorResourcesContainer container">
-            <h2 class="font-tertiary font-family-tertiary fw-bold">Author Resources</h2>
-            <div class="aurthorResources d-flex flex-wrap justify-content-between mt-4">
-                <div class="cookbook d-flex justify-content-between my-5">
+            <h2 class="font-tertiary font-family-tertiary fw-bold text-center text-md-start">Author Resources</h2>
+            <div class="aurthorResources d-flex flex-wrap justify-content-between mt-4 row">
+                <div class="cookbook d-flex justify-content-between my-5 col-6 flex-column flex-md-row align-items-center">
                     <div class="cookbookImage">
                         <img src="images/arrangement-delicious-ingredients-kitchen(1).jpg" alt="">
                     </div>
-                    <div class="cookbookText ms-5">
-                        <h3 class="mt-1">Cookbook</h3>
+                    <div class="cookbookText ms-md-5 m-0 text-center text-md-start">
+                        <h3 class="mt-md-1">Cookbook</h3>
                         <p class="fs-7 text-secondary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         <a class="color-tertiary fs-7 fw-bold" href="">Learn more></a>
                     </div>
                 </div>
     
-                <div class="about d-flex justify-content-between my-5">
+                <div class="about d-flex justify-content-between my-5 col-6 flex-column flex-md-row align-items-center">
                     <div class="aboutImage">
                         <img src="images/women-cooking-together-home(1).jpg" alt="">
                     </div>
-                    <div class="aboutText ms-5">
-                        <h3 class="mt-1">About</h3>
+                    <div class="aboutText ms-md-5 m-0 text-center text-md-start">
+                        <h3 class="mt-md-1">About</h3>
                         <p class="fs-7 text-secondary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         <a class="color-tertiary fs-7 fw-bold" href="">Learn more></a>
                     </div>
                 </div>
                 
-                <div class="recipesFaq d-flex justify-content-between mb-5">
+                <div class="recipesFaq d-flex justify-content-between mb-5 col-6 flex-column flex-md-row align-items-center">
                     <div class="recipesFaqImage">
                         <img src="images/tasty-fresh-appetizing-italian-food-ingredients-dark-background-ready-cook-home-italian-healthy-food-cooking-concept-toning(1).jpg" alt="">
                     </div>
-                    <div class="recipesFaqText ms-5">
-                        <h3 class="mt-1">Recipes FAQ</h3>
+                    <div class="recipesFaqText ms-md-5 m-0 text-center text-md-start">
+                        <h3 class="mt-md-1">Recipes FAQ</h3>
                         <p class="fs-7 text-secondary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         <a class="color-tertiary fs-7 fw-bold" href="">Learn more></a>
                     </div>
                 </div>
     
-                <div class="forPartners d-flex justify-content-between mb-5">
+                <div class="forPartners d-flex justify-content-between mb-5 col-6 flex-column flex-md-row align-items-center">
                     <div class="forPartnersImage">
                         <img src="images/smiling-business-man-texting-smartphone-cafe(1).jpg" alt="">
                     </div>
-                    <div class="forPartnersText ms-5">
-                        <h3 class="mt-1">For partners</h3>
+                    <div class="forPartnersText ms-md-5 m-0 text-center text-md-start">
+                        <h3 class="mt-md-1">For partners</h3>
                         <p class="fs-7 text-secondary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         <a class="color-tertiary fs-7 fw-bold" href="">Learn more></a>
                     </div>
@@ -219,7 +224,7 @@
      </section>
 
      <section>
-        <div class="ideaBehindGoodzyContainer color-tertiary d-flex flex-row justify-content-center   container-fluid">
+        <div class="ideaBehindGoodzyContainer color-tertiary d-flex flex-md-row justify-content-center  flex-column container-fluid">
             <div class="ideaBehindGoodzyImage">
                 <img src="images/indoors-banquet-tableware-event-concept.jpg" alt="">
             </div>
@@ -249,24 +254,24 @@
      <section>
         <div class="ourPartnersContainer container">
             <h2 class="text-center">Our Partners</h2>
-            <div class="ourPartners mt-5 d-flex justify-content-between">
-                <div>
+            <div class="ourPartners mt-5 d-flex justify-content-between flex-md-row">
+                <div class=" ourPartnersLogos">
                     <h4 class="fw-bold text-secondary">LOGOHOLDER</h4>
-                    <h4 class="fw-bold text-secondary mt-4">LOGOHOLDER</h4>
+                    <h4 class="fw-bold text-secondary mt-md-4">LOGOHOLDER</h4>
                 </div>
-                <div>
+                <div class=" ourPartnersLogos">
                     <h4 class="fw-bold text-secondary">LOGOHOLDER</h4>
-                    <h4 class="fw-bold text-secondary mt-4">LOGOHOLDER</h4>
+                    <h4 class="fw-bold text-secondary mt-md-4">LOGOHOLDER</h4>
                 </div>
-                <div>
+                <div class=" ourPartnersLogos">
                     <h4 class="fw-bold text-secondary">LOGOHOLDER</h4>
-                    <h4 class="fw-bold text-secondary mt-4">LOGOHOLDER</h4>
+                    <h4 class="fw-bold text-secondary mt-md-4">LOGOHOLDER</h4>
                 </div>
             </div>
         </div>
      </section>
 
-     <div>
+     <footer>
         <div class="footerContaier bg-dark text-white text-center">
             <h2 class="font-family-tertiary fw-bold pt-5">GOODZY</h2>
             <h6 class="fs-7 mb-4">Easy healthy recipes that make you feel good</h6>
@@ -307,10 +312,51 @@
                 <small>Copyright 2022 — Powered by <a href="#" class="text-decoration-underline">Webflow</a>—Developed by <a href="#" class="text-decoration-underline">Anastasiia G.</a></small>
             </div>
         </div>
-          
+     
      </footer>
 
+     <script>
 
+            // if(screen.width < 768){
+            //     const fa = document.getElementById(".footerAdimnList");
+            //     const newBr = document.createElement("br");
+            //     fa.after(newBr);
+            // }
+
+
+            if (screen.width < 768) {
+                document.getElementsByClassName("popularCategories")[0].classList.add("row");
+                document.getElementsByClassName("breakfastContainer")[0].classList.add("col-6");
+                document.getElementsByClassName("dessertContainer")[0].classList.add("col-6");
+                document.getElementsByClassName("drinksContainer")[0].classList.add("col-6");
+                document.getElementsByClassName("mainCourseContainer")[0].classList.add("col-6");
+                document.getElementsByClassName("snacksContainer")[0].classList.add("col-6");
+            }  
+            else{
+                document.getElementsByClassName("popularCategories")[0].classList.remove("row");
+                document.getElementsByClassName("breakfastContainer")[0].classList.remove("col-6");
+                document.getElementsByClassName("dessertContainer")[0].classList.remove("col-6");
+                document.getElementsByClassName("drinksContainer")[0].classList.remove("col-6");
+                document.getElementsByClassName("mainCourseContainer")[0].classList.remove("col-6");
+                document.getElementsByClassName("snacksContainer")[0].classList.remove("col-6");
+            }
+
+            if(screen.width < 768){
+                document.getElementsByClassName("ourPartners")[0].classList.add("row");
+                document.getElementsByClassName("ourPartnersLogos")[0].classList.add("col-6");
+                document.getElementsByClassName("ourPartnersLogos")[1].classList.add("col-6");
+                document.getElementsByClassName("ourPartnersLogos")[2].classList.add("col-6");
+            
+            }
+            else{ 
+                document.getElementsByClassName("ourPartners")[0].classList.remove("row");
+                document.getElementsByClassName("ourPartnersLogos")[0].classList.remove("col-6");
+                document.getElementsByClassName("ourPartnersLogos")[1].classList.remove("col-6");
+                document.getElementsByClassName("ourPartnersLogos")[2].classList.remove("col-6");
+            
+            }
+
+     </script>
      <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
