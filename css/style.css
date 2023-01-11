@@ -874,6 +874,11 @@ body,html{
     width: 100%;
 }
 
+.navMenu > nav > ul > li > a{
+  
+    border-radius: 0px;
+}
+
 }
 
 @media (max-width:768px){
